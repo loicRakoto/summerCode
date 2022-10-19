@@ -1,0 +1,387 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+.sticky {
+    background-color: rgb(51, 51, 51);
+
+}
+
+/* navbar */
+
+.head {
+    position: fixed;
+    transition: 0.5s;
+    z-index: 4;
+    width: 90%;
+}
+
+.header {
+    background: url('./Image/pexels-obi-onyeador-13009437.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+.premier {
+    color: white;
+    font-size: 27px;
+    font-weight: bolder;
+
+}
+
+.premier span {
+    color: #289cff;
+}
+
+
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.navigation ul li::after {
+    width: 0%;
+    height: 2px;
+    background: rgb(21, 216, 206);
+    display: block;
+    margin: auto;
+    content: "";
+    transition: 1s;
+}
+
+.navigation ul li:hover::after {
+    width: 100%;
+}
+
+/* 
+les titre en premiere page */
+.titre {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.titre h1 {
+    font-size: 42px;
+    word-spacing: 1px;
+    letter-spacing: 15px;
+}
+
+.titre p {
+    padding: 40px;
+    font-size: 22px;
+    font-family: monospace;
+}
+
+.titre a {
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    background: transparent;
+}
+
+.titre a:hover {
+    border: 1px solid #f34747;
+    background-color: #f34747;
+    transition: 1s;
+
+    color: white;
+}
+
+/* En savoir plus */
+
+.competence {
+    padding: 40px;
+}
+
+.sav-p {
+    display: block;
+    min-height: 100vh;
+}
+
+.sav-p1 {
+    padding: 35px;
+    color: #343166
+}
+
+.sav-p1 h3 {
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.sav-p2 {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+}
+
+.sav-p3 {
+    padding: 35px;
+}
+
+.sav-p3 p {
+    text-align: center;
+}
+
+.sav-p-g h3 {
+    font-size: 18px;
+}
+
+.loic img {
+    width: 50%;
+}
+
+.patrick img {
+    width: 80%;
+}
+
+.sav-p4 h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.sav-p4 p {
+    text-align: center;
+    padding: 40px;
+}
+
+/* ambition */
+
+.amb {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.amb-droite {
+    display: flex;
+    align-items: center;
+}
+
+.amb-droite img {
+    width: 100vh;
+    display: flex;
+}
+
+.amb-gauche {
+    padding-right: 56px;
+}
+
+.amb-gauche h3 {
+    color: #b71734;
+    font-size: 24px;
+}
+
+@media(max-width:900px) {
+
+    .titre h1 {
+        font-size: 23px;
+        word-spacing: 1px;
+        letter-spacing: 3px;
+    }
+
+    .titre p {
+        padding: 40px;
+        font-size: 15px;
+    }
+
+    .titre a {
+        padding: 8px 17px;
+        font-size: 13px;
+    }
+
+    .sav-p3 p {
+        font-size: 15px;
+    }
+
+    .sav-p4 p {
+        font-size: 15px;
+    }
+
+    .sav-p4 h4 {
+        font-size: 24px;
+    }
+
+    .amb {
+        display: block;
+        padding: 40px;
+    }
+
+    .amb-gauche {
+        padding-right: 0px;
+    }
+
+
+    .amb-gauche h3 {
+        text-align: center;
+        font-size: 24px;
+        color: coral;
+    }
+
+
+
+    .amb-gauche p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .amb-droite {
+        width: 100px;
+        padding-top: 30px;
+
+    }
+
+    .amb-droite img {
+        width: 61vh;
+        display: flex;
+    }
+
+
+
+
+}
+
+/* footer */
+footer {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 20px;
+    margin-top: 50px;
+}
+
+#pied {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+#log {
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    right: 0px;
+
+}
+
+@media all and (max-width: 1150px) {
+    #log {
+        left: 0%;
+    }
+
+    p#contact {
+        width: 300px;
+    }
+}
+
+
+p#contact {
+    margin-top: 2%;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+#facebook {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    left: 50%;
+    top: 30%;
+}
+
+i#imgfb {
+    display: block;
+    font-size: 200%;
+    float: left;
+    color: white;
+    border-radius: 5px;
+    width: 23px;
+    padding: 0% 1%;
+}
+
+i#imgmail {
+    display: block;
+    font-size: 200%;
+    float: left;
+    border-radius: 5px;
+    width: 20%;
+    padding-left: 4px;
+    color: white;
+}
+
+.nom a {
+    text-decoration: none;
+    font-size: 80%;
+    white-space: nowrap;
+}
+
+#Lofb {
+    position: absolute;
+    top: -5px;
+    left: 62%;
+}
+
+#Patfb {
+    position: absolute;
+    bottom: -4px;
+    left: 62%;
+}
+
+#log p a {
+    color: white;
+}
+
+#mail {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    left: 50%;
+    top: 60%;
+}
+
+#Lomail {
+    position: absolute;
+    top: 3px;
+    left: 62%;
+}

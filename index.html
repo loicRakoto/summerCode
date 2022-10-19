@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Source+Sans+Pro:ital,wght@0,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>UpdateDes</title>
+</head>
+
+<body>
+
+    <section class="header">
+        <nav class="head">
+            <div class="premier"><span>E</span>MIT DA2I</div>
+
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#sava">Savoir plus</a></li>
+                    <li><a href="#ambi">Nos ambitions</a></li>
+                    <li><a href="#pied">A propos</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="titre">
+            <h1>
+                </h3>
+                <p>L'art a toujours été notre passion</p>
+                <a href="#sava">Commencer</a>
+        </div>
+    </section>
+
+    <section class="sav-p" id="sava">
+        <div class="sav-p1">
+            <h3>Qui sommes nous?</h3>
+        </div>
+        <div class="sav-p2">
+            <div class="loic">
+                <img src="./Image/IMG-20221012-WA0001.jpg" alt="">
+                <p>RAKOTOMANDIMBY Mendrintsoa Johanne Loic</p>
+            </div>
+            <div class="patrick">
+                <img src="./Image/1666159119385.jpg" alt="">
+                <p>RAHARINIAINA Patrick Andréguetti</p>
+            </div>
+        </div>
+        <div class="sav-p3">
+            <p>Nous sommes des étudiants en deuxieme année licence en informatique à l'Ecole Management
+                et d'Innovation Technologique à Fianarantsoa. Notre parcours se spécialise sur le développement
+                d'application internet/intranet</p>
+        </div>
+
+        <div class="competence">
+            <h3>Compétences en dévellopement</h3>
+            <br>
+            <label for="html">
+                <input type="range" min="0" max="100" value="90" id="html" disabled> HTML
+            </label>
+            <br>
+            <label for="css">
+                <input type="range" min="0" max="100" value="50" id="css" disabled> CSS
+            </label>
+            <br>
+            <label for="javascript">
+                <input type="range" min="0" max="100" value="50" id="javascript" disabled> JS
+            </label>
+            <br>
+            <label for="php">
+                <input type="range" min="0" max="100" value="80" id="php" disabled> PHP
+            </label>
+            <br>
+            <label for="java">
+                <input type="range" min="0" max="100" value="60" id="java" disabled> JAVA
+            </label>
+            <br>
+            <label for="c#">
+                <input type="range" min="0" max="100" value="60" id="c#" disabled> C#
+            </label>
+        </div>
+        <div class="sav-p4">
+            <h4>Update<span style="color:brown ;">Des</span></h4>
+            <p>Ceci est un groupe que nous avons créé avant le commencement du summer-code. Comme son nom l'indique
+                <span style="color:rgb(255 3 78);">UPDATE</span> signifie mise à jour et <span
+                    style="color:rgb(255 3 78);"> DES</span> comme Design. UpdateDes a été créé dans le but
+                d'approfondir notre
+                connaissance au sein du développement web
+            </p>
+        </div>
+    </section>
+
+
+    <section class="amb" id="ambi">
+
+        <div class="amb-gauche">
+            <h3>Nos ambitions</h3>
+            <br>
+            <p>On est très enthousiaste à l'idée de travailler en équipe, parce qu'on souhaite appronfondir notre
+                propre connaissance et faire une échange téchnique pour le développement web. On pense qu'on sera en
+                mesure de proposer de nouvelles idées pour atteindre et à depasser les objectifs principaux dans un
+                projet. Notre tâche principale inclus la conception d'interface d'utilisateur, le test et le débogage du
+                site web
+
+            </p>
+        </div>
+        <div class="amb-droite">
+            <img src="./Image/Travail-dequipe-Mag-min-1024x579.jpg.webp" alt="">
+        </div>
+
+    </section>
+    <footer>
+        <div id="pied">
+            <div id="log">
+                <p id="contact">Contactez-nous:</p>
+                <div id="facebook">
+                    <i class="fa-brands fa-facebook-f" id="imgfb"></i>
+                    <p id="Lofb" class="nom"><a href="https://web.facebook.com/loic.rkto/">Loïc Rakotomandimby</a></p>
+                    <p id="Patfb" class="nom"><a href="https://www.facebook.com/mpiasa.mpiasa">Mc Parfait</a></p>
+                </div>
+                <div id="mail">
+                    <i class="fa-solid fa-envelope" id="imgmail"></i>
+                    <p id="Lomail" class="nom"><a href="#">rakotomandimby.loic@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>window.addEventListener('scroll', function () {
+            const header = document.querySelector('.head');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        const text = document.querySelector('.titre h1');
+
+
+        new Typewriter(text, {
+            deleteSpeed: 20
+        })
+            .typeString('Nous sommes les Update')
+            .pauseFor(10)
+            .typeString('<span style="color:#ff5159">Des<span>')
+
+
+            .start()</script>
+</body>
+
+</html>
